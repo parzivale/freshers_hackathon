@@ -1,4 +1,4 @@
 extends Node
 
 var damage = 1
-var speed = 10
+var speed = 1000

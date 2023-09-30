@@ -8,7 +8,7 @@ func _ready():
 func _process(delta):
 	var bodies = get_node("Area2D").get_overlapping_areas()
 	for i in bodies:
-		if i.get_node("../Enemy"):
+		if i.get_node_or_null("../Enemy"):
 			var player_vars = get_node("/root/PlayerVar")
 			player_vars.health -= 1
 			i.get_parent().queue_free()
