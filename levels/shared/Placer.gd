@@ -1,12 +1,12 @@
 extends Sprite2D
 
 var pos = Vector2(0, 0)
-@export var tileSize = 128
+@export var tileSize = 64
 
 var tower = preload("res://levels/shared/Tower.tscn")
 
 func snap(number, by = tileSize):
-	return round(number / by) * by
+	return ((round(number / (by)) * (by)))
 
 func place():
 	var new = tower.instantiate()
@@ -17,8 +17,12 @@ func place():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	get_node("Area2D").area_entered.connect(logger)
 	pass # Replace with function body.
 
+
+func logger(area_entered):
+	print(area_entered)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -26,6 +30,7 @@ func _process(_delta):
 	self.position.x = snap(pos.x)
 	self.position.y = snap(pos.y)
 #	print(pos)
+
 
 func _unhandled_input(event):
 	if event is InputEventKey:

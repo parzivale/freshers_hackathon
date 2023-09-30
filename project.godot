@@ -19,3 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlayerVar="*res://player_var.tscn"
+
+[display]
+
+window/stretch/mode="viewport"
