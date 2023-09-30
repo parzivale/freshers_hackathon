@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://digdpli5kufk2"]
+[gd_scene load_steps=4 format=3 uid="uid://dwtkjm0d04ew6"]
 
 [ext_resource type="Script" path="res://levels/shared/Tower.gd" id="1_8dvfc"]
 [ext_resource type="Texture2D" uid="uid://m8ygesh0144t" path="res://icon.svg" id="2_yq11n"]

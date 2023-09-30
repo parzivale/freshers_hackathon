@@ -9,7 +9,7 @@ var timer = 0
 func shoot():
 	var path2d = get_parent().get_node("enemy_spawner").get_node("Path2D")
 	var new = projectile.instantiate()
-	print(enemies)
+
 	if (len(enemies) > 0):
 		enemies.sort_custom(func(a, b): return a.position.distance_to(position) < b.position.distance_to(position))
 		var target = enemies[0]
