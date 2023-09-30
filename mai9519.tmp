@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd34i53nol4wy"]
+
+[ext_resource type="TileSet" uid="uid://dhtb23h6lx2sl" path="res://GrassDirtGenericTileSet.tres" id="1_r3au7"]
+[ext_resource type="PackedScene" uid="uid://d2rbgadt225wj" path="res://enemy_route.tscn" id="2_5f2l5"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_r3au7")
+format = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Enemy_route" parent="." node_paths=PackedStringArray("Start", "End") instance=ExtResource("2_5f2l5")]
+Start = NodePath("../Start")
+End = NodePath("../End")
+
+[node name="Start" type="Marker2D" parent="."]
+position = Vector2(-462, -106)
+
+[node name="End" type="Marker2D" parent="."]
+position = Vector2(330, -110)
