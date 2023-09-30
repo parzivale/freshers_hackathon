@@ -1,16 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://bou0bh5ehldx4"]
 
-[ext_resource type="Texture2D" uid="uid://dl85ae6ewaduw" path="res://enemies_sprites/Basic Snake.png" id="1_03012"]
+[ext_resource type="Script" path="res://enemies/basic_snake/Snake_stats.gd" id="2_4shlv"]
 [ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_dx4gi"]
-[ext_resource type="Script" path="res://enemies/basic_snake/Snake_stats.gd" id="3_millr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iv12g"]
+load_path = "res://.godot/imported/Basic Snake.png-1a8961f724adac8a009250c7c34a880e.ctex"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wb05h"]
+radius = 30.0
 
 [node name="PathFollow2D" type="PathFollow2D"]
 loop = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_03012")
+texture = SubResource("CompressedTexture2D_iv12g")
 script = ExtResource("2_dx4gi")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -19,4 +22,4 @@ script = ExtResource("2_dx4gi")
 shape = SubResource("CircleShape2D_wb05h")
 
 [node name="Enemy" type="Node" parent="."]
-script = ExtResource("3_millr")
+script = ExtResource("2_4shlv")

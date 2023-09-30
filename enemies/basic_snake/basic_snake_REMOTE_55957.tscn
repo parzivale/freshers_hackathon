@@ -1,19 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cfysbto623hx6"]
+[gd_scene load_steps=5 format=3 uid="uid://c75o0o78q40cc"]
 
 [ext_resource type="Texture2D" uid="uid://dl85ae6ewaduw" path="res://enemies_sprites/Basic Snake.png" id="1_03012"]
 [ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_dx4gi"]
 [ext_resource type="Script" path="res://enemies/basic_snake/Snake_stats.gd" id="3_millr"]
-
-[sub_resource type="GDScript" id="GDScript_yfiud"]
-script/source = "extends Area2D
-
-
-func _ready():
-	area_entered.connect(despawn)
-	
-func despawn(area):
-	get_parent().queue_free()
-"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wb05h"]
 
@@ -25,7 +14,6 @@ texture = ExtResource("1_03012")
 script = ExtResource("2_dx4gi")
 
 [node name="Area2D" type="Area2D" parent="."]
-script = SubResource("GDScript_yfiud")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_wb05h")

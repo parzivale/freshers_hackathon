@@ -1,14 +1,15 @@
 [gd_scene load_steps=7 format=3 uid="uid://bd34i53nol4wy"]
 
-[ext_resource type="TileSet" uid="uid://ce041bck1bq28" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
+[ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="1_v53c4"]
 [ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://levels/shared/enemy_spawner.tscn" id="3_b74gn"]
 [ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://levels/shared/enemy_goal.tscn" id="4_y7qn2"]
 [ext_resource type="PackedScene" uid="uid://bqn6kkgx31x1a" path="res://levels/shared/placer.tscn" id="4_yhqcr"]
 
 [sub_resource type="Curve2D" id="Curve2D_2sgk3"]
+bake_interval = 0.01
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -584, 16, -26.9695, 7.49154, 26.9695, -7.49154, -368, 8, -3.01693, 15.3934, 3.01693, -15.3934, -368, -120, -4.49492, -11.9865, 4.49492, 11.9865, -304, -120, -11.9797, -17.5559, 11.9797, 17.5559, -296, 192, -0.542318, 24.522, 0.542318, -24.522, -176, 192, -11.7725, 10.0908, 11.7725, -10.0908, -176, 72, 1.68179, 28.5905, -1.68179, -28.5905, -240, 72, -18.4997, 26.9087, 18.4997, -26.9087, -240, -56, 5.04538, -15.1361, -5.04538, 15.1361, 136, -56, 40.363, -21.8633, -40.363, 21.8633, 136, 200, 21.8633, 6.72717, -21.8633, -6.72717, 72, 208, -13.4543, -15.1361, 13.4543, 15.1361, 80, 272, -15.1361, -30.2723, 15.1361, 30.2723, 400, 272, 25.2269, 0, -25.2269, 0, 392, 72, 16.8179, -31.9541, -16.8179, 31.9541, 336, 80, -20.1815, 16.8179, 20.1815, -16.8179, 336, -56, 23.5451, -20.1815, -23.5451, 20.1815, 576, -56)
+"points": PackedVector2Array(0, 0, 0, 0, -584, 16, -26.9695, 7.49154, 26.9695, -7.49154, -323, 8, -3.01693, 15.3934, 3.01693, -15.3934, -323, -57, -4.49492, -11.9865, 4.49492, 11.9865, -257, -59, -11.9797, -17.5559, 11.9797, 17.5559, -250, 204, -0.542318, 24.522, 0.542318, -24.522, -133, 192, 19.3407, 14.2953, -19.3407, -14.2953, -126, 71, 23.956, 43.7361, -23.956, -43.7361, -192, 59, -38.1428, 16.2453, 38.1428, -16.2453, -168, -52, -23.0162, -29.1669, 23.0162, 29.1669, 192, -45, 25.2098, -41.5064, -25.2098, 41.5064, 201, 197, 27.4756, -34.8039, -27.4756, 34.8039, 130, 206, -13.4543, -15.1361, 13.4543, 15.1361, 157, 270, -57.2284, 4.52402, 57.2284, -4.52402, 433, 269, 19.6146, 16.8369, -19.6146, -16.8369, 443, 136, 51.6142, -2.77009, -51.6142, 2.77009, 391, 140, -39.2634, 30.2874, 39.2634, -30.2874, 415, -61, 23.5451, -20.1815, -23.5451, 20.1815, 645, -43)
 }
 point_count = 18
 
@@ -41,11 +42,10 @@ editor_draw_limits = true
 [node name="enemy_spawner" parent="." instance=ExtResource("3_b74gn")]
 
 [node name="Path2D" type="Path2D" parent="enemy_spawner"]
-position = Vector2(17, 18)
+position = Vector2(0, -10)
 curve = SubResource("Curve2D_2sgk3")
 
 [node name="Enemy_goal" parent="." node_paths=PackedStringArray("path") instance=ExtResource("4_y7qn2")]
 path = NodePath("../enemy_spawner/Path2D")
 
 [node name="Placer" parent="." instance=ExtResource("4_yhqcr")]
-tileSize = 64
