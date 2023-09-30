@@ -17,7 +17,9 @@ func place():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("Area2D").area_entered.connect(logger)
+	var cells = get_node("../Placer").get_used_cells(0)
+	
+	
 	pass # Replace with function body.
 
 
