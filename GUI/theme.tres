@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d2u408h4j2yuj"]
+
+[ext_resource type="StyleBox" uid="uid://wmh82ass0nj8" path="res://GUI/button.tres" id="1_xackh"]
+
+[resource]
+default_font_size = 32
+Button/styles/hover = ExtResource("1_xackh")
+Button/styles/normal = ExtResource("1_xackh")
