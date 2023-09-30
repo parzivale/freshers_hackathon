@@ -11,10 +11,7 @@ config_version=5
 [application]
 
 config/name="Code"
-<<<<<<< HEAD
 run/main_scene="res://main.tscn"
-=======
-run/main_scene="res://node_2d.tscn"
->>>>>>> 3dc8e5e55c6a22b2c584cd28427fc26031d78888
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="res://main.tscn"

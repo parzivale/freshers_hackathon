@@ -25,9 +25,3 @@ curve = SubResource("Curve2D_2sgk3")
 
 [node name="Enemy_goal" parent="." node_paths=PackedStringArray("path") instance=ExtResource("4_y7qn2")]
 path = NodePath("../enemy_spawner/Path2D")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -22.0
-offset_top = -18.0
-offset_right = 18.0
-offset_bottom = 22.0
