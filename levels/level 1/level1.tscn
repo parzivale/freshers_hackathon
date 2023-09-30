@@ -1,11 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://bd34i53nol4wy"]
 
-[ext_resource type="TileSet" uid="uid://bs8as2clooexi" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
-[ext_resource type="TileSet" uid="uid://chsqx02sqqdhi" path="res://tilesets/Grass Tileset 1.tres" id="1_v53c4"]
+[ext_resource type="TileSet" uid="uid://bgvgamf6ftpgp" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
+[ext_resource type="TileSet" uid="uid://d4mwam2wbjuq1" path="res://tilesets/Grass Tileset 1.tres" id="1_v53c4"]
 [ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://levels/shared/enemy_spawner.tscn" id="3_b74gn"]
 [ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://levels/shared/enemy_goal.tscn" id="4_y7qn2"]
 [ext_resource type="PackedScene" uid="uid://bqn6kkgx31x1a" path="res://levels/shared/placer.tscn" id="4_yhqcr"]
-[ext_resource type="Script" path="res://levels/level 1/Label.gd" id="5_xx2fb"]
 
 [sub_resource type="Curve2D" id="Curve2D_2sgk3"]
 _data = {
@@ -13,7 +12,7 @@ _data = {
 }
 point_count = 18
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = ExtResource("1_v53c4")
@@ -43,6 +42,5 @@ curve = SubResource("Curve2D_2sgk3")
 
 [node name="Enemy_goal" parent="." node_paths=PackedStringArray("path") instance=ExtResource("4_y7qn2")]
 path = NodePath("../enemy_spawner/Path2D")
-
 
 [node name="Placer" parent="." instance=ExtResource("4_yhqcr")]
