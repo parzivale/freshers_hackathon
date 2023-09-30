@@ -11,4 +11,5 @@ func _ready():
 	
 func spawn():
 	var enemy = Enemy.instantiate()
+	print("here")
 	get_node("Path2D").add_child(enemy)

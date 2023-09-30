@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2dssq16y6ugh"
-path="res://.godot/imported/Path Tileset Straight 1.png-31bcaa639214e0724c0657b45327bd6f.ctex"
+uid="uid://biidr4pi1ogpv"
+path="res://.godot/imported/Rattle Snake.png-d8df186eada409a92c3ad38025a03666.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Path Tileset Straight 1.png"
-dest_files=["res://.godot/imported/Path Tileset Straight 1.png-31bcaa639214e0724c0657b45327bd6f.ctex"]
+source_file="res://enemies_sprites/Rattle Snake.png"
+dest_files=["res://.godot/imported/Rattle Snake.png-d8df186eada409a92c3ad38025a03666.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1o8xdug36pgl"
-path="res://.godot/imported/Path Tileset 1 Right.png-0305a4afaac92d1d1c22e402a608622d.ctex"
+uid="uid://bnyk6rqj1bjg8"
+path="res://.godot/imported/Thunder Snake.png-ac35502b1023074e3fd98c232569bfcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Path Tileset 1 Right.png"
-dest_files=["res://.godot/imported/Path Tileset 1 Right.png-0305a4afaac92d1d1c22e402a608622d.ctex"]
+source_file="res://enemies_sprites/Thunder Snake.png"
+dest_files=["res://.godot/imported/Thunder Snake.png-ac35502b1023074e3fd98c232569bfcb.ctex"]
 
 [params]
 

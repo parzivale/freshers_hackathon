@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddo731ldvo6e3"
-path="res://.godot/imported/Path Tileset 1 Left.png-17fc2894caf206ae7aa4d2ffb3dda2f9.ctex"
+uid="uid://cvv0u08ks2aiy"
+path="res://.godot/imported/King Cobra Snake.png-03f006bf0f55112a11c86a82fa1eea47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/Path Tileset 1 Left.png"
-dest_files=["res://.godot/imported/Path Tileset 1 Left.png-17fc2894caf206ae7aa4d2ffb3dda2f9.ctex"]
+source_file="res://enemies_sprites/King Cobra Snake.png"
+dest_files=["res://.godot/imported/King Cobra Snake.png-03f006bf0f55112a11c86a82fa1eea47.ctex"]
 
 [params]
 
