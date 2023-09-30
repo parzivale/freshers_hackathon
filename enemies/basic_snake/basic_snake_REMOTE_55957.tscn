@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bou0bh5ehldx4"]
+[gd_scene load_steps=6 format=3 uid="uid://cfysbto623hx6"]
 
 [ext_resource type="Texture2D" uid="uid://dl85ae6ewaduw" path="res://enemies_sprites/Basic Snake.png" id="1_03012"]
 [ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_dx4gi"]

@@ -17,21 +17,9 @@ func place():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-<<<<<<< HEAD
-<<<<<<< HEAD
-	var cells = get_node("../Placer").get_used_cells(0)
-	
-	
-=======
->>>>>>> 9c4e37d (stuff)
-=======
-	get_node("Area2D").area_entered.connect(logger)
->>>>>>> parent of 9c4e37d (stuff)
+	#var cells = get_node("../Placer").get_used_cells(0)
 	pass # Replace with function body.
 
-
-func logger(area_entered):
-	print(area_entered)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

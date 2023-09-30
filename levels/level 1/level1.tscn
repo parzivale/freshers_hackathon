@@ -1,15 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bd34i53nol4wy"]
 
-<<<<<<< HEAD
-[ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
-<<<<<<< HEAD
+[ext_resource type="TileSet" uid="uid://ce041bck1bq28" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="1_v53c4"]
-=======
-=======
-[ext_resource type="TileSet" uid="uid://bgvgamf6ftpgp" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
->>>>>>> parent of 9c4e37d (stuff)
-[ext_resource type="TileSet" uid="uid://d4mwam2wbjuq1" path="res://tilesets/Grass Tileset 1.tres" id="1_v53c4"]
->>>>>>> 9c4e37d (stuff)
 [ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://levels/shared/enemy_spawner.tscn" id="3_b74gn"]
 [ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://levels/shared/enemy_goal.tscn" id="4_y7qn2"]
 [ext_resource type="PackedScene" uid="uid://bqn6kkgx31x1a" path="res://levels/shared/placer.tscn" id="4_yhqcr"]
@@ -56,3 +48,4 @@ curve = SubResource("Curve2D_2sgk3")
 path = NodePath("../enemy_spawner/Path2D")
 
 [node name="Placer" parent="." instance=ExtResource("4_yhqcr")]
+tileSize = 64

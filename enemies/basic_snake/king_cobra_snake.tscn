@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bn0hyer226c7n"]
+[gd_scene load_steps=6 format=3 uid="uid://cope1wafopicb"]
 
 [ext_resource type="Texture2D" uid="uid://cvv0u08ks2aiy" path="res://enemies_sprites/King Cobra Snake.png" id="1_56sk3"]
 [ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_ewml1"]
@@ -17,7 +17,7 @@ func despawn(area):
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wb05h"]
 
-[node name="PathFollow2D" type="PathFollow2D"]
+[node name="PathFollow2D2" type="PathFollow2D"]
 loop = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
