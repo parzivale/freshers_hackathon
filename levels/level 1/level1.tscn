@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bd34i53nol4wy"]
+[gd_scene load_steps=7 format=3 uid="uid://bd34i53nol4wy"]
 
 [ext_resource type="TileSet" uid="uid://dhtb23h6lx2sl" path="res://tilesets/GrassDirtGenericTileSet.tres" id="1_s743f"]
 [ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://levels/shared/enemy_spawner.tscn" id="3_b74gn"]
 [ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://levels/shared/enemy_goal.tscn" id="4_y7qn2"]
 [ext_resource type="PackedScene" uid="uid://bqn6kkgx31x1a" path="res://levels/shared/placer.tscn" id="4_yhqcr"]
+[ext_resource type="Script" path="res://levels/level 1/Label.gd" id="5_xx2fb"]
 
 [sub_resource type="Curve2D" id="Curve2D_2sgk3"]
 _data = {
@@ -28,3 +29,10 @@ curve = SubResource("Curve2D_2sgk3")
 path = NodePath("../enemy_spawner/Path2D")
 
 [node name="Tower" parent="." instance=ExtResource("4_yhqcr")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -572.0
+offset_top = -315.0
+offset_right = -532.0
+offset_bottom = -292.0
+script = ExtResource("5_xx2fb")
