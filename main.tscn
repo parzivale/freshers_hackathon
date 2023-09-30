@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqh56b2cmnwao"]
 
 [ext_resource type="Script" path="res://start_game.gd" id="1_idx8u"]
-[ext_resource type="Theme" uid="uid://d2u408h4j2yuj" path="res://GUI/theme.tres" id="1_o1qbq"]
+[ext_resource type="Theme" path="res://GUI/theme.tres" id="1_o1qbq"]
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="3_kis2n"]
 [ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="4_c2inb"]
 

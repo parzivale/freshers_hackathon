@@ -1,15 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0rmb60nvptru"]
+[gd_scene load_steps=7 format=3 uid="uid://b0rmb60nvptru"]
 
-[ext_resource type="Theme" uid="uid://d2u408h4j2yuj" path="res://GUI/theme.tres" id="1_lcupj"]
-[ext_resource type="Script" path="res://Start.gd" id="2_xfp64"]
+[ext_resource type="Theme" path="res://GUI/theme.tres" id="1_lcupj"]
+[ext_resource type="Script" path="res://start_game.gd" id="2_a3une"]
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="3_ytxbw"]
 [ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="4_4kkae"]
-
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2uv6k"]
 blend_mode = 3
 light_mode = 1
-
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r4wg3"]
 blend_mode = 2
@@ -34,10 +32,7 @@ scale = Vector2(0.567537, 0.594425)
 theme = ExtResource("1_lcupj")
 theme_override_font_sizes/font_size = 144
 text = "Start"
-script = ExtResource("2_xfp64")
-text = "Retry?"
 script = ExtResource("2_a3une")
-
 
 [node name="Title" type="RichTextLabel" parent="."]
 anchors_preset = -1
