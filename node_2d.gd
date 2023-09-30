@@ -7,6 +7,5 @@ func _ready():
 	var pla = placer.instantiate()
 	pass # Replace with function body.
 
-
 func _process(delta):
 	pass
