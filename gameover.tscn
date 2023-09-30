@@ -5,6 +5,12 @@
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="3_ytxbw"]
 [ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="4_4kkae"]
 
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2uv6k"]
+blend_mode = 3
+light_mode = 1
+
+
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_r4wg3"]
 blend_mode = 2
 
@@ -20,32 +26,38 @@ color = Color(0, 0, 0, 0.47451)
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Start" type="Button" parent="."]
-offset_left = -405.0
-offset_top = 44.0
-offset_right = 403.0
-offset_bottom = 266.0
+offset_left = -229.0
+offset_top = 111.0
+offset_right = 579.0
+offset_bottom = 333.0
+scale = Vector2(0.567537, 0.594425)
 theme = ExtResource("1_lcupj")
 theme_override_font_sizes/font_size = 144
 text = "Start"
 script = ExtResource("2_xfp64")
+text = "Retry?"
+script = ExtResource("2_a3une")
+
 
 [node name="Title" type="RichTextLabel" parent="."]
 anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -463.0
-offset_top = -232.0
-offset_right = 570.0
-offset_bottom = -39.0
+offset_left = -465.0
+offset_top = -230.0
+offset_right = 568.0
+offset_bottom = -37.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 128
-text = "Birds v Snakes"
+text = "Game over........"
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1
+material = SubResource("CanvasItemMaterial_2uv6k")
 position = Vector2(32, 32)
+rotation = -2.97312
 tile_set = ExtResource("3_ytxbw")
 cell_quadrant_size = 64
 format = 2
@@ -62,6 +74,7 @@ layer_1/tile_data = PackedInt32Array()
 z_index = -1
 material = SubResource("CanvasItemMaterial_r4wg3")
 position = Vector2(43, 44)
+rotation = -2.97312
 tile_set = ExtResource("4_4kkae")
 cell_quadrant_size = 64
 format = 2
@@ -70,6 +83,7 @@ layer_0/tile_data = PackedInt32Array(-65542, 131073, 1, -65541, 65537, 0, -5, 1,
 [node name="TileMap2" type="TileMap" parent="."]
 z_index = -1
 position = Vector2(32, 32)
+rotation = -2.97312
 tile_set = ExtResource("4_4kkae")
 cell_quadrant_size = 64
 format = 2

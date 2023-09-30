@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://daoe1j0erktv1"]
+
+[ext_resource type="Script" path="res://GUI/Upgrade.gd" id="1_dq6sy"]
+
+[node name="Upgrade" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dq6sy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 44.0
+scale = Vector2(8.66412, 2.43196)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 0.577087
+offset_top = -0.411186
+offset_right = 135.577
+offset_bottom = 25.5888
+scale = Vector2(0.159974, 0.574317)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Random Upgrade"
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 18.3515
+offset_top = 25.4939
+offset_right = 153.352
+offset_bottom = 51.4939
+scale = Vector2(0.159974, 0.59325)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0 Money"
+horizontal_alignment = 2
