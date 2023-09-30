@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdptxbxbq6ckv"]
+[gd_scene load_steps=3 format=3 uid="uid://c1bryxsvixxkp"]
 
 [ext_resource type="Script" path="res://levels/shared/Projectile.gd" id="1_phk16"]
 [ext_resource type="Texture2D" uid="uid://cvcqu2664anwf" path="res://Tower Assets/Projectiles/Eagle Projectile L.png" id="2_cnds3"]
