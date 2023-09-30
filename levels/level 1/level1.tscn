@@ -48,4 +48,3 @@ curve = SubResource("Curve2D_2sgk3")
 path = NodePath("../enemy_spawner/Path2D")
 
 [node name="Placer" parent="." instance=ExtResource("4_yhqcr")]
-tileSize = 64
