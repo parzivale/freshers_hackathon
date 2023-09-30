@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bn0hyer226c7n"]
+[gd_scene load_steps=6 format=3 uid="uid://bou0bh5ehldx4"]
 
-[ext_resource type="Texture2D" uid="uid://cvv0u08ks2aiy" path="res://enemies_sprites/King Cobra Snake.png" id="1_56sk3"]
-[ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_ewml1"]
-[ext_resource type="Script" path="res://enemies/basic_snake/Snake_stats.gd" id="3_4m1sr"]
+[ext_resource type="Texture2D" uid="uid://dl85ae6ewaduw" path="res://enemies_sprites/Basic Snake.png" id="1_03012"]
+[ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_dx4gi"]
+[ext_resource type="Script" path="res://enemies/basic_snake/Snake_stats.gd" id="3_millr"]
 
 [sub_resource type="GDScript" id="GDScript_yfiud"]
 script/source = "extends Area2D
@@ -21,8 +21,8 @@ func despawn(area):
 loop = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_56sk3")
-script = ExtResource("2_ewml1")
+texture = ExtResource("1_03012")
+script = ExtResource("2_dx4gi")
 
 [node name="Area2D" type="Area2D" parent="."]
 script = SubResource("GDScript_yfiud")
@@ -31,4 +31,4 @@ script = SubResource("GDScript_yfiud")
 shape = SubResource("CircleShape2D_wb05h")
 
 [node name="Enemy" type="Node" parent="."]
-script = ExtResource("3_4m1sr")
+script = ExtResource("3_millr")
