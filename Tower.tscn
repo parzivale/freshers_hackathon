@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://fu8d2vf78bch"]
+
+[ext_resource type="Texture2D" uid="uid://m8ygesh0144t" path="res://icon.svg" id="1_vw1kq"]
+[ext_resource type="Script" path="res://Tower.gd" id="2_hb0wl"]
+
+[node name="Tower" type="Node2D"]
+
+[node name="Tower" type="Sprite2D" parent="."]
+texture = ExtResource("1_vw1kq")
+script = ExtResource("2_hb0wl")
