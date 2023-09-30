@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0n0llwx1xbb1"
-path="res://.godot/imported/pixilart-drawing.png-9e9c431ac86a42d1fefc4da3ac6bc15c.ctex"
+uid="uid://dl85ae6ewaduw"
+path="res://.godot/imported/Basic Snake.png-77e379ad1be1f035f403ca9bda8feead.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixilart-drawing.png"
-dest_files=["res://.godot/imported/pixilart-drawing.png-9e9c431ac86a42d1fefc4da3ac6bc15c.ctex"]
+source_file="res://enemies_sprites/Basic Snake.png"
+dest_files=["res://.godot/imported/Basic Snake.png-77e379ad1be1f035f403ca9bda8feead.ctex"]
 
 [params]
 

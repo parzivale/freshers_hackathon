@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxm538xaf3g0k"
-path="res://.godot/imported/Sus Snake.png-59d703f5aeda384a1a53c8d7f610cdc6.ctex"
+path="res://.godot/imported/Sus Snake.png-c33e6d2fc1ac2f17b2e3d06fded9ac18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemies/Sus Snake.png"
-dest_files=["res://.godot/imported/Sus Snake.png-59d703f5aeda384a1a53c8d7f610cdc6.ctex"]
+source_file="res://enemies_sprites/Sus Snake.png"
+dest_files=["res://.godot/imported/Sus Snake.png-c33e6d2fc1ac2f17b2e3d06fded9ac18.ctex"]
 
 [params]
 

@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://cwwcj436wprn2"]
 
-[ext_resource type="Script" path="res://enemy_goal.gd" id="1_sw84q"]
+[ext_resource type="Script" path="res://levels/shared/enemy_goal.gd" id="1_sjdj2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wq78t"]
 
 [node name="Enemy_goal" type="Node2D"]
-script = ExtResource("1_sw84q")
+script = ExtResource("1_sjdj2")
 
 [node name="Area2D" type="Area2D" parent="."]
 

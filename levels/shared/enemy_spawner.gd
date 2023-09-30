@@ -1,11 +1,11 @@
 extends Node2D
 
-var Enemy = preload("res://enemy.tscn")
+var Enemy = preload("res://enemies/basic_snake/basic_snake.tscn")
 	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _ready():
 	var timer = get_node("Timer")
 	await timer.timeout.connect(spawn)
 	
