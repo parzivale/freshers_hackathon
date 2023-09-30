@@ -1,17 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://bd34i53nol4wy"]
+[gd_scene load_steps=10 format=3 uid="uid://bd34i53nol4wy"]
 
 [ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="1_v53c4"]
 [ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://levels/shared/enemy_spawner.tscn" id="3_b74gn"]
 [ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://levels/shared/enemy_goal.tscn" id="4_y7qn2"]
 [ext_resource type="PackedScene" uid="uid://bqn6kkgx31x1a" path="res://levels/shared/placer.tscn" id="4_yhqcr"]
+[ext_resource type="Texture2D" uid="uid://df51ufxnm5txr" path="res://GUI/Tower Selection GUI.png" id="5_wvrjh"]
+[ext_resource type="Script" path="res://levels/level 1/Label.gd" id="5_xx2fb"]
+[ext_resource type="Script" path="res://levels/level 1/Label2.gd" id="7_e8muj"]
 
 [sub_resource type="Curve2D" id="Curve2D_2sgk3"]
 bake_interval = 0.01
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -584, 16, -26.9695, 7.49154, 26.9695, -7.49154, -323, 8, -3.01693, 15.3934, 3.01693, -15.3934, -323, -57, -4.49492, -11.9865, 4.49492, 11.9865, -257, -59, -11.9797, -17.5559, 11.9797, 17.5559, -250, 204, -0.542318, 24.522, 0.542318, -24.522, -133, 192, 19.3407, 14.2953, -19.3407, -14.2953, -126, 71, 23.956, 43.7361, -23.956, -43.7361, -192, 59, -38.1428, 16.2453, 38.1428, -16.2453, -168, -52, -23.0162, -29.1669, 23.0162, 29.1669, 192, -45, 25.2098, -41.5064, -25.2098, 41.5064, 201, 197, 27.4756, -34.8039, -27.4756, 34.8039, 130, 206, -13.4543, -15.1361, 13.4543, 15.1361, 157, 270, -57.2284, 4.52402, 57.2284, -4.52402, 433, 269, 19.6146, 16.8369, -19.6146, -16.8369, 443, 136, 51.6142, -2.77009, -51.6142, 2.77009, 391, 140, -39.2634, 30.2874, 39.2634, -30.2874, 415, -61, 23.5451, -20.1815, -23.5451, 20.1815, 645, -43)
+"points": PackedVector2Array(0, 0, 0, 0, -584, 16, -26.9695, 7.49154, 26.9695, -7.49154, -323, 8, -3.01693, 15.3934, 3.01693, -15.3934, -323, -57, -4.49492, -11.9865, 4.49492, 11.9865, -257, -59, 0, 0, 0, 0, -268, 79, 0, 0, 0, 0, -275.772, 139.307, -11.9797, -17.5559, 11.9797, 17.5559, -250, 204, -0.542318, 24.522, 0.542318, -24.522, -133, 192, 19.3407, 14.2953, -19.3407, -14.2953, -126, 71, 23.956, 43.7361, -23.956, -43.7361, -192, 59, -38.1428, 16.2453, 38.1428, -16.2453, -168, -52, -23.0162, -29.1669, 23.0162, 29.1669, 192, -45, 25.2098, -41.5064, -25.2098, 41.5064, 201, 197, 27.4756, -34.8039, -27.4756, 34.8039, 130, 206, -13.4543, -15.1361, 13.4543, 15.1361, 157, 270, -57.2284, 4.52402, 57.2284, -4.52402, 433, 269, 19.6146, 16.8369, -19.6146, -16.8369, 443, 136, 51.6142, -2.77009, -51.6142, 2.77009, 391, 140, -39.2634, 30.2874, 39.2634, -30.2874, 415, -61, 23.5451, -20.1815, -23.5451, 20.1815, 645, -43)
 }
-point_count = 18
+point_count = 20
 
 [node name="Node2D2" type="Node2D"]
 
@@ -34,7 +37,67 @@ position = Vector2(32, 32)
 tile_set = ExtResource("1_fkb6p")
 cell_quadrant_size = 64
 format = 2
-layer_0/tile_data = PackedInt32Array(-65542, 131073, 1, -65541, 65537, 0, -5, 1, 0, 65531, 1, 0, 65532, 131073, 0, 2, 1, 0, 65538, 1, 0, 65542, 65537, 0, 65541, 131073, 0, -7, 1, 1, -8, 1, 1, -9, 1, 1, -10, 1, 1, -6, 65537, 1, 131067, 1, 0, 196603, 131073, 0, 131069, 1, 0, 196605, 65537, 1, 196604, 1, 1, 65533, 65537, 0, -65540, 131073, 1, -65539, 1, 1, -65538, 1, 1, -65537, 1, 1, -131072, 1, 1, -131071, 1, 1, -131070, 65537, 0, -4, 1, 0, -65534, 1, 0, 196609, 131073, 0, 131074, 65537, 1, 196610, 1, 1, 131078, 1, 0, 196614, 65537, 1, 131073, 131073, 1, 196611, 1, 1, 196612, 1, 1, 196613, 1, 1, -65531, 1, 0, -131067, 131073, 1, -131066, 1, 1, -131065, 1, 1, -131064, 1, 1, -131063, 1, 1, -131062, 1, 1, 5, 1, 0)
+layer_0/tile_data = PackedInt32Array(-131078, 65537, 1, -131077, 1, 0, -65541, 1, 0, -5, 1, 0, 65531, 131073, 0, -131076, 1, 0, -65540, 131073, 0, -3, 1, 0, 65533, 65537, 1, 65537, 131073, 0, -196606, 1, 0, -131070, 1, 0, -65534, 1, 0, 2, 65537, 1, 65538, 1, 1, -196603, 1, 0, -131067, 1, 0, -65531, 131073, 0, 6, 1, 0, 65542, 65537, 1, -131082, 1, 1, -131081, 1, 1, -131080, 1, 1, -131079, 1, 1, -196614, 131073, 1, -196613, 65537, 0, -196612, 131073, 1, 65532, 1, 1, -196611, 1, 1, -65539, 65537, 0, -196610, 1, 1, -196609, 1, 1, -262144, 1, 1, -262143, 1, 1, 1, 131073, 1, -262142, 65537, 0, 65539, 1, 1, 65540, 1, 1, -262139, 131073, 1, 65541, 1, 1, -262138, 1, 1, -65530, 65537, 0, -262137, 1, 1, -262136, 1, 1, -262135, 1, 1, -262134, 1, 1)
+
+[node name="Placer" parent="." instance=ExtResource("4_yhqcr")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -118.0
+offset_top = -111.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label4" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -443.0
+offset_top = -200.0
+offset_right = -403.0
+offset_bottom = -174.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "health
+"
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -350.0
+offset_top = -200.0
+offset_right = -310.0
+offset_bottom = -174.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "money"
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -389.0
+offset_top = -200.0
+offset_right = -349.0
+offset_bottom = -174.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "hi
+"
+script = ExtResource("5_xx2fb")
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -292.0
+offset_top = -199.0
+offset_right = -250.0
+offset_bottom = -173.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "there
+"
+script = ExtResource("7_e8muj")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = -423.0
+offset_top = 321.0
+offset_right = 657.0
+offset_bottom = 429.0
+texture = ExtResource("5_wvrjh")
+expand_mode = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 editor_draw_limits = true
@@ -42,10 +105,8 @@ editor_draw_limits = true
 [node name="enemy_spawner" parent="." instance=ExtResource("3_b74gn")]
 
 [node name="Path2D" type="Path2D" parent="enemy_spawner"]
-position = Vector2(0, -10)
+position = Vector2(-2, -141)
 curve = SubResource("Curve2D_2sgk3")
 
 [node name="Enemy_goal" parent="." node_paths=PackedStringArray("path") instance=ExtResource("4_y7qn2")]
 path = NodePath("../enemy_spawner/Path2D")
-
-[node name="Placer" parent="." instance=ExtResource("4_yhqcr")]

@@ -9,3 +9,4 @@ func _process(delta):
 
 	if get_node("../Enemy").health <= 0:
 		self.queue_free()
+		get_node("/root/PlayerVar").money += get_node("../Enemy").money

@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://fo1yu3x0e0jk"]
+[gd_scene load_steps=5 format=3 uid="uid://bvrg1am5m78s3"]
 
 [ext_resource type="Texture2D" uid="uid://cvv0u08ks2aiy" path="res://enemies_sprites/King Cobra Snake.png" id="1_56sk3"]
 [ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_ewml1"]
