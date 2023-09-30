@@ -13,18 +13,19 @@ func place():
 	get_parent().add_child(new)
 	new.position.x = snap(pos.x)
 	new.position.y = snap(pos.y)
-	print(pos)
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+<<<<<<< HEAD
 	var cells = get_node("../Placer").get_used_cells(0)
 	
 	
+=======
+>>>>>>> 9c4e37d (stuff)
 	pass # Replace with function body.
 
 
-func logger(area_entered):
-	print(area_entered)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -38,4 +39,4 @@ func _unhandled_input(event):
 	if event is InputEventKey:
 		if event.pressed and event.keycode == KEY_P:
 			place()
-			print("TOWER DROPPED!!!!")
+
