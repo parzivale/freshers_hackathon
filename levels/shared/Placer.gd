@@ -3,7 +3,7 @@ extends Sprite2D
 var pos = Vector2(0, 0)
 @export var tileSize = 128
 
-var tower = preload("res://Tower.tscn")
+var tower = preload("res://levels/shared/Tower.tscn")
 
 func snap(number, by = tileSize):
 	return round(number / by) * by

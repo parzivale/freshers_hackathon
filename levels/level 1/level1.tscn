@@ -44,12 +44,5 @@ curve = SubResource("Curve2D_2sgk3")
 [node name="Enemy_goal" parent="." node_paths=PackedStringArray("path") instance=ExtResource("4_y7qn2")]
 path = NodePath("../enemy_spawner/Path2D")
 
-[node name="Tower" parent="." instance=ExtResource("4_yhqcr")]
 
-[node name="Label" type="Label" parent="."]
-offset_left = -572.0
-offset_top = -315.0
-offset_right = -532.0
-offset_bottom = -292.0
-script = ExtResource("5_xx2fb")
-
+[node name="Placer" parent="." instance=ExtResource("4_yhqcr")]
