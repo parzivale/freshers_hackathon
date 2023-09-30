@@ -12,7 +12,6 @@ load_path = "res://.godot/imported/Basic Snake.png-1a8961f724adac8a009250c7c34a8
 loop = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.7, 0.7)
 texture = SubResource("CompressedTexture2D_iv12g")
 script = ExtResource("2_dx4gi")
 
