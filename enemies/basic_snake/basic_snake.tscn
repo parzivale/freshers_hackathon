@@ -1,10 +1,18 @@
 [gd_scene load_steps=5 format=3 uid="uid://bou0bh5ehldx4"]
 
-[ext_resource type="Script" path="res://enemies/basic_snake/Snake_stats.gd" id="2_4shlv"]
+[ext_resource type="Texture2D" uid="uid://dl85ae6ewaduw" path="res://enemies_sprites/Basic Snake.png" id="1_03012"]
 [ext_resource type="Script" path="res://enemies/basic_snake/enemy.gd" id="2_dx4gi"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iv12g"]
-load_path = "res://.godot/imported/Basic Snake.png-1a8961f724adac8a009250c7c34a880e.ctex"
+[sub_resource type="GDScript" id="GDScript_yfiud"]
+script/source = "extends Area2D
+
+
+func _ready():
+	area_entered.connect(despawn)
+	
+func despawn(area):
+	get_parent().queue_free()
+"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wb05h"]
 
@@ -12,14 +20,13 @@ load_path = "res://.godot/imported/Basic Snake.png-1a8961f724adac8a009250c7c34a8
 loop = false
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.7, 0.7)
-texture = SubResource("CompressedTexture2D_iv12g")
+texture = ExtResource("1_03012")
 script = ExtResource("2_dx4gi")
 
 [node name="Area2D" type="Area2D" parent="."]
+script = SubResource("GDScript_yfiud")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_wb05h")
 
 [node name="Enemy" type="Node" parent="."]
-script = ExtResource("2_4shlv")
