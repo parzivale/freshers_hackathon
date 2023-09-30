@@ -1,27 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://bd34i53nol4wy"]
+[gd_scene load_steps=2 format=3 uid="uid://bqh56b2cmnwao"]
 
-[ext_resource type="TileSet" uid="uid://dhtb23h6lx2sl" path="res://GrassDirtGenericTileSet.tres" id="1_r3au7"]
-[ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://enemy_spawner.tscn" id="3_b74gn"]
-[ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://enemy_goal.tscn" id="4_y7qn2"]
-
-[sub_resource type="Curve2D" id="Curve2D_2sgk3"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -385, -185, -18, -79, 18, 79, 305, -170, 6, -67, -6, 67, -130, -12, -38, 44, 38, -44, 306, 65, 0, 0, 0, 0, 400, -108)
-}
-point_count = 5
+[ext_resource type="Script" path="res://start_game.gd" id="1_idx8u"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = ExtResource("1_r3au7")
-format = 2
+[node name="Button" type="Button" parent="."]
+offset_left = -392.0
+offset_top = -117.0
+offset_right = 408.0
+offset_bottom = 114.0
+text = "Start"
+script = ExtResource("1_idx8u")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="enemy_spawner" parent="." instance=ExtResource("3_b74gn")]
-
-[node name="Path2D" type="Path2D" parent="enemy_spawner"]
-curve = SubResource("Curve2D_2sgk3")
-
-[node name="Enemy_goal" parent="." node_paths=PackedStringArray("path") instance=ExtResource("4_y7qn2")]
-path = NodePath("../enemy_spawner/Path2D")

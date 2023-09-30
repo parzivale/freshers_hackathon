@@ -17,7 +17,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pos = get_global_mouse_position()
 	self.position.x = round(pos.x / snap) * snap
 	self.position.y = round(pos.y / snap) * snap
