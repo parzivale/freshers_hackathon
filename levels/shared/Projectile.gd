@@ -19,4 +19,6 @@ func _process(delta):
 	var ba = (target).normalized() 
 	position += ba * speed
 	
+	$Sprite2D.flip_h = ba.x > 0
 	#if (target.distance_to(position) < 3): self.queue_free()
+	
