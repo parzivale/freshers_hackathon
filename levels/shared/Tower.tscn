@@ -10,6 +10,7 @@ radius = 300.0
 script = ExtResource("1_8dvfc")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+visible = false
 z_index = 1
 offset_left = -41.0
 offset_top = -83.0
@@ -20,7 +21,6 @@ text = "yoyo
 "
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_yq11n")
 
 [node name="Area2D" type="Area2D" parent="."]

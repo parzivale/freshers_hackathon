@@ -43,6 +43,7 @@ offset_right = 1154.0
 offset_bottom = 650.0
 theme = ExtResource("2_4ukjo")
 theme_override_font_sizes/font_size = 23
+allow_search = false
 item_count = 5
 max_columns = 10
 same_column_width = true

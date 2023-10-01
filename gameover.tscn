@@ -46,7 +46,7 @@ offset_bottom = -55.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 128
-text = "so over........"
+text = "so over!!!!!!!!!!!!!!!"
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1

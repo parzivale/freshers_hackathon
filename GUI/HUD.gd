@@ -36,8 +36,10 @@ func hide_upgrades():
 		tween.tween_property($Control2, "position", Vector2(0, 0), 0.5).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
 
 func buy_tower(index):
-	if get_node("/root/PlayerVar").money < costs[index]:
+	if get_node("/root/PlayerVar").money >= costs[index] and get_node("/root/PlayerVar").placeMode == false:
+		get_node("/root/PlayerVar").money -= costs[index]
 		get_node("/root/PlayerVar").placeMode = true
+		get_node("/root/PlayerVar").buyIndex = index
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
