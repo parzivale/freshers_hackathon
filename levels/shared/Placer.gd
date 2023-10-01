@@ -14,6 +14,7 @@ func place():
 	new.position.x = snap(pos.x)
 	new.position.y = snap(pos.y)
 	print(pos)
+	get_node("/root/PlayerVar").placeMode = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,11 +24,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if get_node("/root/PlayerVar").placeMode:
+	visible = get_node("/root/PlayerVar").placeMode
+	if visible:
 		pos = get_global_mouse_position()
 		self.position.x = snap(pos.x)
-		self.position.y = snap(pos.y)
-	#	print(pos)
+		self.position.y = snap(pos.y)	
 
 
 func _unhandled_input(event):
