@@ -34,13 +34,13 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -476.0
-offset_top = -162.0
-offset_right = 438.0
-offset_bottom = 2.00002
+offset_left = -478.0
+offset_top = -281.0
+offset_right = 436.0
+offset_bottom = -117.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(1.06783, 0.335254)
+scale = Vector2(1.06783, 1.09525)
 theme_override_font_sizes/normal_font_size = 128
 text = "Birds v Snakes"
 
@@ -77,7 +77,7 @@ layer_1/tile_data = PackedInt32Array()
 [node name="TileMap3" type="TileMap" parent="."]
 z_index = -1
 material = SubResource("CanvasItemMaterial_r4wg3")
-position = Vector2(43, 44)
+position = Vector2(32, 40)
 tile_set = ExtResource("4_c2inb")
 cell_quadrant_size = 64
 format = 2

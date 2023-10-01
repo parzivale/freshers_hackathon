@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd34i53nol4wy"]
+[gd_scene load_steps=9 format=3 uid="uid://bd34i53nol4wy"]
 
 [ext_resource type="Script" path="res://levels/level 1/level1.gd" id="1_e0d0j"]
 [ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="1_fkb6p"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cr20sfk2u4wy3" path="res://levels/shared/enemy_spawner.tscn" id="3_b74gn"]
 [ext_resource type="PackedScene" uid="uid://cwwcj436wprn2" path="res://levels/shared/enemy_goal.tscn" id="4_y7qn2"]
 [ext_resource type="PackedScene" uid="uid://bqn6kkgx31x1a" path="res://levels/shared/placer.tscn" id="4_yhqcr"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_cgnsn"]
+blend_mode = 2
 
 [sub_resource type="Curve2D" id="Curve2D_2sgk3"]
 bake_interval = 0.01
@@ -18,6 +21,7 @@ point_count = 18
 script = ExtResource("1_e0d0j")
 
 [node name="TileMap2" type="TileMap" parent="."]
+z_index = -1
 position = Vector2(32, 32)
 tile_set = ExtResource("1_v53c4")
 cell_quadrant_size = 64
@@ -37,6 +41,15 @@ tile_set = ExtResource("1_fkb6p")
 cell_quadrant_size = 64
 format = 2
 layer_0/tile_data = PackedInt32Array(-65542, 131073, 1, -65541, 65537, 0, -5, 1, 0, 65531, 1, 0, 65532, 131073, 0, 2, 1, 0, 65538, 1, 0, 65542, 65537, 0, 65541, 131073, 0, -7, 1, 1, -8, 1, 1, -9, 1, 1, -10, 1, 1, -6, 65537, 1, 131067, 1, 0, 196603, 131073, 0, 131069, 1, 0, 196605, 65537, 1, 196604, 1, 1, 65533, 65537, 0, -65540, 131073, 1, -65539, 1, 1, -65538, 1, 1, -65537, 1, 1, -131072, 1, 1, -131071, 1, 1, -131070, 65537, 0, -4, 1, 0, -65534, 1, 0, 196609, 131073, 0, 131074, 65537, 1, 196610, 1, 1, 131078, 1, 0, 196614, 65537, 1, 131073, 131073, 1, 196611, 1, 1, 196612, 1, 1, 196613, 1, 1, -65531, 1, 0, -131067, 131073, 1, -131066, 1, 1, -131065, 1, 1, -131064, 1, 1, -131063, 1, 1, -131062, 1, 1, 5, 1, 0)
+
+[node name="TileMap3" type="TileMap" parent="."]
+z_index = -1
+material = SubResource("CanvasItemMaterial_cgnsn")
+position = Vector2(32, 40)
+tile_set = ExtResource("1_fkb6p")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(-65542, 131073, 1, -65541, 65537, 0, -5, 1, 0, 65531, 1, 0, 65532, 131073, 0, 2, 1, 0, 65538, 1, 0, 65542, 65537, 0, 65541, 131073, 0, -7, 1, 1, -8, 1, 1, -9, 1, 1, -10, 1, 1, -6, 65537, 1, 131069, 1, 0, 196605, 65537, 1, 65533, 65537, 0, -65540, 131073, 1, -65539, 1, 1, -65538, 1, 1, -65537, 1, 1, -131072, 1, 1, -131071, 1, 1, -131070, 65537, 0, -4, 1, 0, -65534, 1, 0, 196609, 131073, 0, 131074, 65537, 1, 196610, 1, 1, 131078, 1, 0, 196614, 65537, 1, 131073, 131073, 1, 196611, 1, 1, 196612, 1, 1, 196613, 1, 1, -65531, 1, 0, -131067, 131073, 1, -131066, 1, 1, -131065, 1, 1, -131064, 1, 1, -131063, 1, 1, -131062, 1, 1, 5, 1, 0, 131067, 1, 0, 196603, 131073, 0, 196604, 1, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 editor_draw_limits = true

@@ -3,3 +3,4 @@ extends Node
 @export var placeMode = false
 @export var money = 0
 @export var wave = 1
+@export var towerSelected: Sprite2D = null

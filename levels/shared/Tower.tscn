@@ -11,9 +11,9 @@ script = ExtResource("1_8dvfc")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 z_index = 1
-offset_left = -18.0
-offset_top = -57.0
-offset_right = 22.0
+offset_left = -41.0
+offset_top = -83.0
+offset_right = 37.0
 offset_bottom = -17.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "yoyo

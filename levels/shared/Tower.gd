@@ -33,14 +33,17 @@ func show_label():
 	
 func hide_label():
 	$RichTextLabel.visible = false
+	
+func select_tower():
+	get_node("/root/PlayerVar").towerSelected = self
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Area2D.area_entered.connect(on_enter)
 	$Area2D.area_exited.connect(on_exit)
-	$TextureRect.mouse_entered.connect(show_label)
-	$TextureRect.mouse_exited.connect(hide_label)
-
+	$TextureRect.mouse_entered.connect(select_tower)
+	$TextureRect.mouse_exited.connect(func(): get_node("/root/PlayerVar").towerSelected = null)
+	$RichTextLabel.text = tower_name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	timer += delta
