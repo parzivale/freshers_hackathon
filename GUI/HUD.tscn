@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=3 uid="uid://bwtaicagdrdax"]
+
+[ext_resource type="Script" path="res://GUI/HUD.gd" id="1_4644t"]
+[ext_resource type="Theme" uid="uid://d2u408h4j2yuj" path="res://GUI/theme.tres" id="2_4ukjo"]
+[ext_resource type="Texture2D" uid="uid://bc2iid63f48rq" path="res://Tower Assets/GUI Icons/Crow GUI Icon.png" id="3_vl12e"]
+[ext_resource type="Texture2D" uid="uid://4bsbhn3skiqj" path="res://Tower Assets/GUI Icons/Eagle GUI Icon.png" id="4_vc2su"]
+[ext_resource type="Texture2D" uid="uid://5q7k3a0rt561" path="res://Tower Assets/GUI Icons/Hawk GUI Icon.png" id="5_1qfbx"]
+[ext_resource type="Texture2D" uid="uid://bdqp14jm6jsb4" path="res://Tower Assets/GUI Icons/Owl GUI Icon.png" id="6_8or67"]
+[ext_resource type="Texture2D" uid="uid://cpa4c4y4jrs5s" path="res://Tower Assets/GUI Icons/Pigeon GUI Icon.png" id="7_gpyui"]
+
+[node name="Tower UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4644t")
+
+[node name="Money" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.035
+offset_left = 21.0
+offset_top = 89.0
+offset_right = 208.68
+offset_bottom = 157.32
+theme = ExtResource("2_4ukjo")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Money:"
+
+[node name="Health" type="Label" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 20.0
+offset_right = 245.0
+offset_bottom = 111.0
+theme = ExtResource("2_4ukjo")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Health:"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 395.0
+offset_right = 1151.0
+offset_bottom = 706.0
+color = Color(1, 1, 1, 0)
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Wave" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 974.0
+offset_top = 493.0
+offset_right = 1146.0
+offset_bottom = 563.0
+theme = ExtResource("2_4ukjo")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "Wave 0"
+horizontal_alignment = 2
+
+[node name="ItemList" type="ItemList" parent="Control"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 557.0
+offset_right = 1154.0
+offset_bottom = 650.0
+theme = ExtResource("2_4ukjo")
+theme_override_font_sizes/font_size = 23
+item_count = 5
+max_columns = 10
+same_column_width = true
+item_0/text = "Crow Tower"
+item_0/icon = ExtResource("3_vl12e")
+item_1/text = "Eagle Tower"
+item_1/icon = ExtResource("4_vc2su")
+item_2/text = "Hawk Tower"
+item_2/icon = ExtResource("5_1qfbx")
+item_3/text = "Owl Tower"
+item_3/icon = ExtResource("6_8or67")
+item_4/text = "Pigeon Tower"
+item_4/icon = ExtResource("7_gpyui")

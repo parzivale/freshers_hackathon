@@ -9,6 +9,16 @@ radius = 300.0
 [node name="Tower" type="Node2D"]
 script = ExtResource("1_8dvfc")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 1
+offset_left = -18.0
+offset_top = -57.0
+offset_right = 22.0
+offset_bottom = -17.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "yoyo
+"
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_yq11n")
@@ -17,3 +27,9 @@ texture = ExtResource("2_yq11n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_0v4l3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0

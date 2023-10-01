@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqh56b2cmnwao"]
 
 [ext_resource type="Script" path="res://start_game.gd" id="1_idx8u"]
-[ext_resource type="Theme" path="res://GUI/theme.tres" id="1_o1qbq"]
+[ext_resource type="Theme" uid="uid://d2u408h4j2yuj" path="res://GUI/theme.tres" id="1_o1qbq"]
 [ext_resource type="TileSet" uid="uid://3xj2w11qrbyd" path="res://tilesets/Grass Tileset 1.tres" id="3_kis2n"]
 [ext_resource type="TileSet" uid="uid://cq33eoilfs4oj" path="res://tilesets/Path Tileset 1.tres" id="4_c2inb"]
 
@@ -34,14 +34,30 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -463.0
-offset_top = -232.0
-offset_right = 570.0
-offset_bottom = -39.0
+offset_left = -476.0
+offset_top = -162.0
+offset_right = 438.0
+offset_bottom = 2.00002
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.06783, 0.335254)
 theme_override_font_sizes/normal_font_size = 128
 text = "Birds v Snakes"
+
+[node name="Title2" type="RichTextLabel" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -356.0
+offset_top = -90.0
+offset_right = 539.0
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.855665, 0.319428)
+theme_override_font_sizes/normal_font_size = 128
+text = "the battle of the century!!!"
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1

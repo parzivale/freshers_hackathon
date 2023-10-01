@@ -23,10 +23,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	pos = get_global_mouse_position()
-	self.position.x = snap(pos.x)
-	self.position.y = snap(pos.y)
-#	print(pos)
+	if get_node("/root/PlayerVar").placeMode:
+		pos = get_global_mouse_position()
+		self.position.x = snap(pos.x)
+		self.position.y = snap(pos.y)
+	#	print(pos)
 
 
 func _unhandled_input(event):
